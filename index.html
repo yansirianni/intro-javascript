@@ -13,13 +13,34 @@
 <body>
     <h1>Olá mundo!</h1>
 
+    <h2>Modal</h2>
+
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#meuModal">Meu modal</button>
+
+    <div id="meuModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Meu primeiro modal</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Texto do meu modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <h2>Tooltip</h2>
 
-    <button class="btn btn-primary" data-toggle="tooltip" title="Conteudo do tooltip">Meu Tooltip</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Conteudo do tooltip">Meu Tooltip</button>
 
     <h2>Popover</h2>
 
-    <button class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
     <h2>Tabela com bootstrap</h2>
 
@@ -42,13 +63,7 @@
         <!-- JS -->
         <script src="public/js/jquery.js"></script>
         <script src="public/js/bootstrap.bundle.min.js"></script>
-        <script>
-            $(function () {
-                $('[data-toggle="popover"]').popover()
-
-                $('[data-toggle="tooltip"]').tooltip()
-            });
-        </script>
+        <script src="index.js"></script>
     </footer>
 </body>
 </html>
