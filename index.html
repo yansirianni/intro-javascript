@@ -13,9 +13,13 @@
 <body>
     <h1>Olá mundo!</h1>
 
+    <h2>Tooltip</h2>
+
+    <button class="btn btn-primary" data-toggle="tooltip" title="Conteudo do tooltip">Meu Tooltip</button>
+
     <h2>Popover</h2>
 
-    <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <button class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
     <h2>Tabela com bootstrap</h2>
 
@@ -41,6 +45,8 @@
         <script>
             $(function () {
                 $('[data-toggle="popover"]').popover()
+
+                $('[data-toggle="tooltip"]').tooltip()
             });
         </script>
     </footer>
